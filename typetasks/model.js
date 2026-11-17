@@ -11,7 +11,7 @@ function addTask(tasks, title) {
     };
     return [...tasks, newTask];
 }
-// 4. completeTask: returns a new array with the matching task set to "done"
+// 4. completeTask: returns a new array with the matching task set to "done".
 function completeTask(tasks, id) {
     return tasks.map((task) => task.id === id ? { ...task, status: "done" } : task);
 }
